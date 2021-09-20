@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виталик Ананьев](https://up.htmlacademy.ru/htmlcss/32/user/1169333).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
