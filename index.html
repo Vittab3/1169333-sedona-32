@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page">
@@ -11,7 +12,7 @@
   <header class="page-header">
 
     <nav class="page-header__navigation navigation">
-      <ul class=" navigation__list">
+      <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link current">Главная</a>
         </li>
@@ -22,8 +23,8 @@
           <a class="navigation__link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <div>
-        <img class="navigation__logo" src="" alt="Логотип Седона" width="" height="">
+      <div class="navigation__logo">
+        <img class="navigation__img" src="img/logo/logo-sedona.svg" alt="Логотип Седона" width="138" height="70">
       </div>
       <ul class="navigation-user">
         <li class="navigation-user__item">
@@ -35,34 +36,36 @@
           <a class="navigation-user__link" href="#">
             <span class="visually-hidden">Лайки</span>
           </a>
-          <section class="navigation__favorites favorites">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <div class="favorites__box">
-              <img class="favorites__img" src="" alt="Гостиница 'Пустынный перепел'" width="" height="">
-              <a class="favorites__link" href="">Desert Quail Inn</a>
-              <p class="favorites__text">Мотель</p>
-            </div>
-            <div class="favorites__box">
-              <img class="favorites__img" src="" alt="Виллы в Поко-Диабло" width="" height="">
-              <a class="favorites__link" href="">Villas at Poco Diablo</a>
-              <p class="favorites__text">Апартаменты</p>
-            </div>
-            <a class="favorites__link" href="">Все избранные</a>
-          </section>
-        </li>
         <li class="navigation-user__item">
-          <button class="button" type="button">Хочу сюда</button>
+          <button class="button" type="button">Хочу сюда!</button>
         </li>
       </ul>
     </nav>
+    <section class="navigation__favorites favorites">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="favorites__box">
+        <img class="favorites__img" src="" alt="Гостиница 'Пустынный перепел'" width="" height="">
+        <a class="favorites__link" href="">Desert Quail Inn</a>
+        <p class="favorites__text">Мотель</p>
+      </div>
+      <div class="favorites__box">
+        <img class="favorites__img" src="" alt="Виллы в Поко-Диабло" width="" height="">
+        <a class="favorites__link" href="">Villas at Poco Diablo</a>
+        <p class="favorites__text">Апартаменты</p>
+      </div>
+      <a class="favorites__link favorites__link-button" href="">Все избранные</a>
+    </section>
   </header>
 
-  <main class="page-content">
+  <main class="page-content page-container">
 
     <section class="promo">
       <h2 class="visually-hidden">Добро пожаловать</h2>
-      <img class="promo__img" src="" alt="Добро пожаловать" width="" height="">
-      <img class="promo__img promo__img--bg" src="" alt="Горы Седоны" width="" height="">
+      <img class="promo__img" src="img/welcome.svg" alt="Добро пожаловать" width="458" height="352">>
+      <div>
+        <img class="promo__img promo__img--bg" src="img/background-sedona.jpg" alt="Горы Седоны" width="1200"
+        height="438">
+      </div>
       <div class="promo__box">
         <p class="promo__text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="promo__subtext">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -79,23 +82,23 @@
               <p class="info__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="wrap">
-              <img class="wrap__img" src="" alt="Город Седона" width="" height="">
+              <img class="wrap__img" src="img/city-of-sedona.jpg" alt="Город Седона" width="800" height="384">
             </div>
           </div>
           <div class="features">
             <ul class="features__list">
               <li class="features__item">
-                <span class="features__icon features__icon--house"></span>
+                <span class="features__icon features__icon--housing"></span>
                 <h3 class="advantages__title">Жильё</h3>
                 <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="features__item">
-                <span class="features__icon features__icon--eat"></span>
+                <span class="features__icon features__icon--eating"></span>
                 <h3 class="advantages__title">Еда</h3>
                 <p class="advantages__text"> Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="features__item">
-                <span class="features__icon features__icon--gift"></span>
+                <span class="features__icon features__icon--souvenir"></span>
                 <h3 class="advantages__title">Сувениры</h3>
                 <p class="advantages__text">Не только китайского, но и настоящего местного производства!</p>
               </li>
@@ -110,7 +113,7 @@
               <p class="info___text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
             <div class="wrap">
-              <img class="wrap___img" src="" alt="Коньон" width="" height="">
+              <img class="wrap___img" src="img/devil's-bridge.jpg" alt="Коньон" width="800" height="384">
             </div>
           </div>
         </li>
@@ -166,11 +169,11 @@
 
   <footer class="page-footer">
 
-    <section class="page-footer__subscription subscription">
-      <h2 class="subscription__title">Подпишитесь на рассылку</h2>
-      <p class="subscription__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="email">Подписаться</label>
+    <section class="page-footer__subscription subscription-bg">
+      <h2 class="subscription-bg__title">Подпишитесь на рассылку</h2>
+      <p class="subscription-bg__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscription-bg__form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="email"></label>
         <input type="email" name="email" id="email" placeholder="Ваш e-mail">
         <button type="submit" class="button">Подписаться</button>
       </form>
@@ -179,17 +182,17 @@
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--tw" href="https://twitter.com/htmlacademy_ru">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fa" href="https://www.facebook.com/htmlacademy">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--yo" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
